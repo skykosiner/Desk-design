@@ -3,11 +3,25 @@ import './menu.scss';
 
 class Menu extends Component {
     render() {
+        // To get to login page
         function login() {
             window.location.href = "/login"
         }
+        // To get to sign in page
         function sign() {
             window.location.href = "/sign-up"
+        }
+        // Home page
+        function home() {
+            window.location.href = "/"
+        }
+        // About page
+        function about() {
+            window.location.href = "/about"
+        }
+        // Contact page
+        function contact() {
+            window.location.href = "/contact"
         }
         return (
             <div className="app">
@@ -16,9 +30,14 @@ class Menu extends Component {
                 {/* For login and sign up */}
                 <button onClick={login} className="global-underline login">Login</button>
                 <button onClick={sign} className="global-underline sign">Sign up</button>
+                {/* For navigation button */}
+                <div className="nav">
+                    <button onClick={home} className="global-underline nav-button">Home</button>
+                    <button onClick={about} className="global-underline nav-button">About</button>
+                    <button onClick={contact} className="global-underline nav-button">Contact</button>
+                </div>
             </div>
         );
-
     }
 
 }

@@ -11,6 +11,9 @@ class adminlogin extends Component {
         <BrowserRouter>
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route exact path="/about" component={Home} />
+            <Route exact path="/contact" component={Home} />
+            <Route exact path="/sign-up" component={Home} />
             <Route exact path="/Login" component={Login} />
           </Switch>
         </BrowserRouter >

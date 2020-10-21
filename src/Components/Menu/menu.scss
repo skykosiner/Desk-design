@@ -43,3 +43,25 @@
     // Miscellaneous
     cursor: pointer;
 }
+// Navigation button
+.nav{
+  position: absolute;
+  top: 1%;
+  width: 20%;
+  left: 1%;
+}
+.nav-button{
+    margin-left: 28px;
+    // For button
+    background-color: #5E5E5E;
+    border: none;
+    // For text
+    color: $white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px; 
+    // Size
+    height: 40px;
+    width: 97px;
+    // Miscellaneous
+    cursor: pointer;
+}
