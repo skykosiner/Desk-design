@@ -28,8 +28,10 @@ class Menu extends Component {
                 {/* Inside black bit */}
                 <div className="inside"></div>
                 {/* For login and sign up */}
-                <button onClick={login} className="global-underline login">Login</button>
-                <button onClick={sign} className="global-underline sign">Sign up</button>
+                <div className="log">
+                    <button onClick={login} className="global-underline button">Login</button>
+                    <button onClick={sign} className="global-underline button">Sign up</button>
+                </div>
                 {/* For navigation button */}
                 <div className="nav">
                     <button onClick={home} className="global-underline nav-button">Home</button>
