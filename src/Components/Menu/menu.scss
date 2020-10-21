@@ -1,0 +1,45 @@
+@import '../../styles/fonts';
+@import '../../styles/color';
+@import '../../styles/global';
+
+// For the inside black
+.inside{
+    border: 60px #1E1E1E solid;
+}
+// For login button
+.login{
+    // For positioning
+    position: absolute;
+    top: 1%;
+    right: 13%;
+    // For button
+    background-color: #5E5E5E;
+    border: none;
+    // For text
+    color: $white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    // Size
+    height: 40px;
+    width: 97px;
+    // Miscellaneous
+    cursor: pointer;
+}
+.sign{
+    // For positioning
+    position: absolute;
+    top: 1%;
+    right: 5%;
+    // For button
+    background-color: #5E5E5E;
+    border: none;
+    // For text
+    color: $white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px; 
+    // Size
+    height: 40px;
+    width: 97px;
+    // Miscellaneous
+    cursor: pointer;
+}

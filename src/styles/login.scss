@@ -1,8 +1,10 @@
 @import 'fonts';
 // TItle
 .title{
-    margin-top: 300px;
-    text-align: center;
+    margin: 400px;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
 }
 // For username
 .username{

@@ -8,7 +8,6 @@ class Login extends Component {
         super(props);
         this.login = this.login.bind(this);
         this.handleChange = this.handleChange.bind(this);
-        this.signup = this.signup.bind(this);
         this.state = {
             email: '',
             password: ''
@@ -27,14 +26,7 @@ class Login extends Component {
         });
     }
 
-    signup(e) {
-        e.preventDefault();
-        fire.auth().createUserWithEmailAndPassword(this.state.email, this.state.password).then((u) => {
-        }).then((u) => { console.log(u) })
-            .catch((error) => {
-                console.log(error);
-            })
-    }
+
     render() {
         return (
             <div className="app">
@@ -46,9 +38,8 @@ class Login extends Component {
                     <input className="password" value={this.state.password} onChange={this.handleChange} type="password" name="password" id="exampleInputPassword1" placeholder="Password" />
                     {/* Login buttons */}
                     <button type="submit" onClick={this.login} className="login-button">Login</button>
-                    <button onClick={this.signup} className="button-sign">Signup</button>
+                    <button onClick={this.signUp} className="button-sign">Signup</button>
                 </form>
-
             </div>
         );
     }
