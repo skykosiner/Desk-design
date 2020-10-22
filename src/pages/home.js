@@ -4,8 +4,7 @@ import Menu from "../Components/Menu/menu.components";
 // Sass
 import '../styles/style.scss';
 // Images
-import out from '../images/far.png';
-import react from '../images/react.png'
+import Image from '../Components/Images/image.component'
 
 class Home extends Component {
     render() {
@@ -14,16 +13,10 @@ class Home extends Component {
                 <Menu />
                 {/* Title */}
                 <h1 className="title-home">Desk design</h1>
-                {/* Images */}
-                <div className="big">
-                    <img className="img-big-inside" src={out} alt="" />
-                    <img className="img-big-inside" src={react} alt="" />
-                </div>
+                <Image />
             </div>
         );
-
     }
-
 }
 
 export default Home;
