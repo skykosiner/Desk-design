@@ -2,14 +2,14 @@
   <div class="home">
     <h1 class="title">Desk design</h1>
     <Images />
-    <Footer />
-  </div>
+    <About />
+  </div>  
 </template>
 
 <script>
 // Components
 import Images from '../components/Image';
-import Footer from '../components/Footer'
+import About from '../components/About'
 // Global css
 import '../App.css'
 
@@ -17,7 +17,7 @@ export default {
   name: 'Home',
   components: {
     Images,
-    Footer
+    About,
   }
 }
 </script>
