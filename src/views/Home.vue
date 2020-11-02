@@ -2,18 +2,22 @@
   <div class="home">
     <h1 class="title">Desk design</h1>
     <Images />
+    <Footer />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
+// Components
 import Images from '../components/Image';
+import Footer from '../components/Footer'
+// Global css
 import '../App.css'
 
 export default {
   name: 'Home',
   components: {
-    Images
+    Images,
+    Footer
   }
 }
 </script>
